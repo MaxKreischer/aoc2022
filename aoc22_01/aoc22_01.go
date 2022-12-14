@@ -57,7 +57,7 @@ func sumOverElfs(elfs [][]int) []int {
 }
 
 func main() {
-	elfs := separateLinesInFileByElf("aoc22_in1.txt")
+	elfs := separateLinesInFileByElf("input/aoc22_in1.txt")
 	elfSums := sumOverElfs(elfs)
 	max_idx, max_val := arraylib.GetLargestElementAndIndex(elfSums)
 	fmt.Println(max_idx, max_val)
